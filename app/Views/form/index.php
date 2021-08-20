@@ -42,6 +42,7 @@
 
     <!-- </div> -->
     <div class="card-body">
+
         <!-- <div class="d-flex justify-content-between"> -->
         <div class="tab-content">
             <div class="tab-pane active" id="home-1" role="tabpanel">
@@ -280,13 +281,6 @@
             url: '<?= base_url('form/filenya') ?>',
         }
     });
-</script>
-<script src="<?= base_url('assets/js/vperizinan.js'); ?>"></script>
-<script src="<?= base_url('assets/js/vperalatan.js'); ?>"></script>
-<script>
-
-</script>
-<script>
     const inputElement1 = document.querySelector('input[id="filenya"]');
     const pond1 = FilePond.create(inputElement1, {
         credits: false,
@@ -311,6 +305,8 @@
         }
     });
 </script>
+<script src="<?= base_url('assets/js/vperizinan.js'); ?>"></script>
+<script src="<?= base_url('assets/js/vperalatan.js'); ?>"></script>
 <script>
     $(document).ready(function() {
         const myDatePicker = MCDatepicker.create({

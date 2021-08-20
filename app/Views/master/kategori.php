@@ -33,7 +33,7 @@
     <!-- MODAL EDIT -->
     <form>
         <div class="modal fade" id="Modal_Edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Edit Kategori</h5>
@@ -42,9 +42,9 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="form-group row">
-                            <label class="col-md-2 col-form-label">Nama Kategori</label>
-                            <div class="col-md-10">
+                        <div class="form-group col">
+                            <label class="col-md-12 col-form-label">Nama Kategori</label>
+                            <div class="col-md-12">
                                 <input type="hidden" name="kategori_id_edit" id="kategori_id_edit">
                                 <input type="text" name="kategori_nama_edit" id="kategori_nama_edit" class="form-control" placeholder="Nama Kategori">
                             </div>
@@ -262,6 +262,7 @@
             }
         });
     }
+    $('.bgn').fadeOut('slow');
 </script>
 <!-- /.card-->
 <?= $this->endSection(); ?>

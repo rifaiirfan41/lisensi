@@ -276,6 +276,7 @@
         placeholder: '- Pilih Peraturan -',
         allowClear: true,
     });
+    $('.bgn').fadeOut('slow');
 </script>
 <!-- /.card-->
 <?= $this->endSection(); ?>

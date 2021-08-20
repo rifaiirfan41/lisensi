@@ -280,5 +280,6 @@
             }
         });
     }
+    $('.bgn').fadeOut('slow');
 </script>
 <?= $this->endSection(); ?>

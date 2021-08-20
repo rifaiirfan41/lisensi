@@ -31,7 +31,7 @@
         <!-- MODAL EDIT -->
         <form>
             <div class="modal fade" id="Modal_Edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Edit Jenis Perizinan</h5>
@@ -40,20 +40,19 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="form-group row">
-                                <label class="col-md-2 col-form-label">Jenis Perizinan</label>
-                                <div class="col-md-10">
+                            <div class="form-group col">
+                                <label class="col-md-12 col-form-label">Jenis Perizinan</label>
+                                <div class="col-md-12">
                                     <input type="hidden" name="jenis_id_edit" id="jenis_id_edit">
                                     <input type="text" name="jenis_nama_edit" id="jenis_nama_edit" class="form-control" placeholder="Jenis Perizinan">
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label class="col-md-2 col-form-label">Deskripsi</label>
-                                <div class="col-md-10">
+                            <div class="form-group col">
+                                <label class="col-md-12 col-form-label">Deskripsi</label>
+                                <div class="col-md-12">
                                     <textarea class="form-control" name="jenis_deskripsi_edit" id="jenis_deskripsi_edit" placeholder="Deskripsi " id="" cols="30" rows="10"></textarea>
                                 </div>
                             </div>
-
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -288,6 +287,7 @@
             }
         });
     }
+    $('.bgn').fadeOut('slow');
 </script>
 <!-- /.card-->
 <?= $this->endSection(); ?>

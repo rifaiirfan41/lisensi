@@ -288,6 +288,7 @@
             }
         });
     }
+    $('.bgn').fadeOut('slow');
 </script>
 <!-- /.card-->
 <?= $this->endSection(); ?>

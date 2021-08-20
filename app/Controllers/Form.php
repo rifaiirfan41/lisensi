@@ -11,6 +11,7 @@ class Form extends BaseController
 	{
 		$this->m_master = new m_master();
 	}
+
 	public function upload_file()
 	{
 		$config['upload_path']          = 'uploads/';
@@ -69,6 +70,7 @@ class Form extends BaseController
 	public function index()
 	{
 		$session = session();
+
 		if ($session->is_login == True && $session->role == "ADMIN") {
 			$data['judul'] = "Form";
 			$data['data'] = $this->m_master->getall('tblm_jenisizin', 'namaJenis');

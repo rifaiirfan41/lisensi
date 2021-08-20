@@ -3,7 +3,6 @@
 
 <link href="<?= base_url('assets/vendors/select2/css/select2.min.css') ?>" rel="stylesheet">
 <link href="<?= base_url('assets/vendors/select2/css/select2-coreui.min.css') ?>" rel="stylesheet">
-<link href="<?= base_url('vendors/datatables.net-bs4/css/dataTables.bootstrap4.css') ?>" rel="stylesheet">
 <style>
     .float {
         position: fixed;
@@ -94,7 +93,7 @@
         </div>
     </div>
 
-    <a href="<?= base_url('form/formperizinan') ?>" class="float">
+    <a href="<?= base_url('listdataperizinan/formperizinan') ?>" class="float">
         <i class="fa fa-plus my-float" style="font-size: 20px;"></i>
     </a>
     <!-- MODAL EDIT -->
@@ -396,5 +395,6 @@
             console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
         });
     });
+    $('.bgn').fadeOut('slow');
 </script>
 <?= $this->endSection(); ?>

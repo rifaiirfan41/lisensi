@@ -300,6 +300,7 @@
         var element = document.getElementById("sidebar");
         element.classList.remove("c-sidebar-lg-show");
     });
+    $('.bgn').fadeOut('slow');
 </script>
 <!-- /.card-->
 <?= $this->endSection(); ?>

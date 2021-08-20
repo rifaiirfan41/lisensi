@@ -63,7 +63,7 @@
 <!-- MODAL EDIT -->
 <form>
     <div class="modal fade" id="Modal_Edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Edit Lokasi</h5>
@@ -72,16 +72,14 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group row">
-                        <label class="col-md-2 col-form-label">Nama Lokasi</label>
-                        <div class="col-md-10">
-                            <input type="hidden" name="lokasi_id_edit" id="lokasi_id_edit">
-                            <input type="text" name="lokasi_nama_edit" id="lokasi_nama_edit" class="form-control" placeholder="lokasi nama">
-                        </div>
+                    <div class="form-group">
+                        <label class="">Nama Lokasi</label>
+                        <input type="hidden" name="lokasi_id_edit" id="lokasi_id_edit">
+                        <input type="text" name="lokasi_nama_edit" id="lokasi_nama_edit" class="form-control" placeholder="lokasi nama">
                     </div>
-                    <div class="form-group row">
-                        <label class="col-md-2 col-form-label">Detail Lokasi</label>
-                        <div class="col-md-10">
+                    <div class="form-group">
+                        <label>Detail Lokasi</label>
+                        <div class="">
                             <textarea class="form-control" name="lokasi_detail_edit" id="lokasi_detail_edit" placeholder="Deskripsi " id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
@@ -306,6 +304,7 @@
             }
         });
     }
+    $('.bgn').fadeOut(10000000);
 </script>
 <!-- /.card-->
 <?= $this->endSection(); ?>

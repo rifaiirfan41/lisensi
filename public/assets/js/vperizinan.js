@@ -2,24 +2,28 @@ $.validator.setDefaults({
   submitHandler: function submitHandler() {
     let dataRespon = [];
     $.ajax({
-      url: "form/t_form",
+      url: 't_form',
       type: "POST",
       dataType: 'json',
       data: $('form').serialize(),
-      beforeSend: function() {
-          $('.tombolsimpan').prop('disabled', true);
-          $('.tombolsimpan').html('Sedang Menyimpan...');
+
+      beforeSend: function () {
+        $('.tombolsimpan').prop('disabled', true);
+        $('.tombolsimpan').html('Sedang Menyimpan...');
       },
-      complete: function() {
-          $('.tombolsimpan').prop('disabled', false);
-          $('.tombolsimpan').html('Submit');
+      complete: function () {
+        $('.tombolsimpan').prop('disabled', false);
+        $('.tombolsimpan').html('Submit');
       },
-      success: function(response) {
+      success: function (response) {
+        console.log(response);
         $.ajax({
-          url: "send",
+          url: window.location.origin + "/send",
           type: "POST",
           data: $('form').serialize(),
-          success: function(res) {
+          success: function (res) {
+            console.log(res);
+
             Swal.fire({
               icon: 'success',
               width: 300,
@@ -28,17 +32,18 @@ $.validator.setDefaults({
               // background: 'linear-gradient(90deg, rgba(214,222,255,0.9724264705882353) 0%, rgba(176,201,255,0.9668242296918768) 100%);',
               showConfirmButton: false,
               timer: 1500
-          });
-          setTimeout(function() {
-            location.reload();  
-        }, 1500);
-          
+            });
+            setTimeout(function () {
+              location.reload();
+            }, 1500);
+
           }
 
         });
-     
-      }
-  });
+
+      },
+
+    });
   }
 });
 $('#formperizinan').validate({
@@ -63,7 +68,7 @@ $('#formperizinan').validate({
     tglberlaku: 'Wajib mengatur tanggal berlaku',
     instansi: 'Nama Instansi tidak boleh kosong',
     alamat: 'Alamat tidak boleh kosong',
-   
+
   },
   errorElement: 'em',
   errorPlacement: function errorPlacement(error, element) {

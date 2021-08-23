@@ -2,7 +2,7 @@ $.validator.setDefaults({
   submitHandler: function submitHandler() {
     let dataRespon = [];
     $.ajax({
-      url: 't_form',
+      url: 'form/t_form',
       type: "POST",
       dataType: 'json',
       data: $('form').serialize(),
@@ -18,7 +18,7 @@ $.validator.setDefaults({
       success: function (response) {
         console.log(response);
         $.ajax({
-          url: window.location.origin + "/send",
+          url: "http://localhost:8080/send",
           type: "POST",
           data: $('form').serialize(),
           success: function (res) {
@@ -33,9 +33,9 @@ $.validator.setDefaults({
               showConfirmButton: false,
               timer: 1500
             });
-            setTimeout(function () {
-              location.reload();
-            }, 1500);
+            // setTimeout(function () {
+            //   location.reload();
+            // }, 1500);
 
           }
 

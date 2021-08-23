@@ -14,6 +14,7 @@
   <link href="<?= base_url('assets/img/logo.png') ?>" rel="icon">
   <link href="<?= base_url('assets/vendors/@coreui/coreui-pro/js/coreui.bundle.min.js') ?>" rel="stylesheet">
   <link href="<?= base_url('assets/vendors/datatables.net/js/jquery.dataTables.js') ?>" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
   <link href="<?= base_url('assets/vendors/datatables.net-bs4/css/dataTables.bootstrap4.css'); ?>" rel="stylesheet">
   <link href="<?= base_url('assets/vendors/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet">
@@ -152,7 +153,7 @@
   <?php
   //$uri = service('uri');
   ?>
-  <div class="c-sidebar c-sidebar-light c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+  <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
     <div class="c-sidebar-brand d-md-down-none" style="font-size: 22px; background: white; color:black;">
       <img src="<?= base_url('assets/img/logo.png') ?>" width="20%" alt=""> &nbsp; E-LISENSI S2P
     </div>

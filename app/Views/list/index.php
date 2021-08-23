@@ -1,6 +1,6 @@
 <?= $this->extend('layout/index'); ?>
 <?= $this->section('konten'); ?>
-
+<link href="<?= base_url('assets/vendors/datatables.net-bs4/css/dataTables.bootstrap4.css') ?>" rel="stylesheet">
 <link href="<?= base_url('assets/vendors/select2/css/select2.min.css') ?>" rel="stylesheet">
 <link href="<?= base_url('assets/vendors/select2/css/select2-coreui.min.css') ?>" rel="stylesheet">
 <style>
